@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="wrapper">
+    <form acction="registrasi.php" method="post">
+        <fieldset class="p">
+            <h1>Registrasi</h1>
+            <div class="input-box">
+                <input type="text" name="Nama" placeholder="Nama Lengkap..." />
+                <i class='bx bx-rename' ></i>
+            </div>
+            <div class="input-box">
+                <input type="text" name="Ussername" placeholder="Ussername..." />
+                <i class='bx bxs-user' ></i>
+            </div>
+            <div class="input-box">   
+                <input type="text" name="Email" placeholder="Email..."/>
+                <i class='bx bx-envelope' ></i>
+            </div>        
+            <div class="input-box">    
+                <input style="text" name="Password" placeholder="Password..."/>
+                <i class='bx bx-lock-alt' ></i>
+            </div>
+            <div class="input-box">
+                <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label> 
+                <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label> 
+            </div>
+            <div class="input-box">    
+                <select name="agama"> 
+                    <option value="islam">Islam</option> 
+                    <option value="kristen">Kristen</option> 
+                    <option value="hindu">Hindu</option> 
+                    <option value="budha">Budha</option> 
+                </select> 
+            </div>
+              <button type="submit" class="btn">Login</button>
+            
+        </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>
